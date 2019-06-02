@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -54,7 +55,35 @@
                         <button id="search" type="submit"></button>
                     </form>
                 </li>
-                <li><img id="cart" src="img/cart.png" alt="Корзина"></li>
+                
+                    <li>
+                       <label class="label-cart">
+                    <input type="checkbox" checked class="label-check-cart">
+                                       <ul class="cart-menu">
+                    <li class="cart-goods"><img src="./img/layer_43.png" alt="">
+                        <p>Rebox Zane</p>
+                        <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p>1 &nbsp; x &nbsp; $250</p>
+                        <p><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></p>
+                    </li>
+                    <div class="clearfix"></div>
+                    <li class="cart-goods"><img src="./img/layer_44.png" alt="">
+                        <p>Rebox Zane</p>
+                        <p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                        <p>1 &nbsp; x &nbsp; $250</p>
+                        <p><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></p>
+                    </li>
+                    <li class="cart-prise"><span>TOTAL</span> <span style="float: right;     padding-right: 18px;">$500.00</span></li>
+                    <li class="cart-button"><button>Checkout</button></li>
+                    <li class="cart-button"><button>Go to cart</button></li>
+                </ul>
+                </label>
+                        <img id="cart" src="img/cart.png" alt="Корзина">
+
+                
+
+                </li>
+
                 <li>
                     <button id="acc">My Account<i class="fa fa-caret-down" aria-hidden="true"></i>
                         <label class="label-check option">

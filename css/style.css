@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'lato';
+    src: url(../fonts/Lato-Black.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -297,7 +302,7 @@ article {
 
 .catalog-block p {
     margin-bottom: 0;
-    
+
 }
 
 .catalog-block p:nth-child(1) {
@@ -822,24 +827,6 @@ h1 {
     text-decoration: none;
 }
 
-#checkbox1 {
-    position: absolute;
-    left: 483px;
-    top: 30px;
-    opacity: 0;
-
-}
-
-#checkbox2 {
-    position: absolute;
-    left: 1368px;
-    opacity: 0;
-}
-
-input:checked + label {
-    display: none;
-}
-
 .login {
     background-color: white;
     position: absolute;
@@ -923,4 +910,105 @@ input:checked + label {
 
 #hiden-check {
     width: 121px
+}
+
+.cart-menu {
+    position: absolute;
+    background-color: white;
+    width: 262px;
+    height: 440px;
+    border: 1px solid grey;
+    top: 85px;
+    left: 1257px;
+}
+
+.cart-menu img {
+    margin: 0;
+    padding: 0;
+    /*float: none;*/
+}
+
+.cart-menu li {
+    width: 100%;
+    padding: 17px 0 0 21px;
+}
+
+.cart-menu p {
+    margin: 0;
+    color: #222222;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.cart-menu li p:nth-child(2) {
+    padding: 14px 0 0 83px;
+}
+
+.cart-menu li p:nth-child(3) {
+    padding: 8px 0 0 83px;
+}
+
+.cart-menu li p:nth-child(4) {
+    padding: 8px 0 0 83px;
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart-menu li p:nth-child(5) {
+    position: relative;
+    right: -115px;
+    top: -41px;
+    color: #c0c0c0;
+}
+
+.star {
+    color: #e4af48 !important;
+}
+
+.cart-menu li:nth-child(4) {
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart-menu button {
+    margin: 0;
+    float: none;
+    width: 91%;
+    border-radius: 0;
+    background-color: white;
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 0;
+}
+
+.cart-menu button:hover {
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+}
+
+.label-check-cart {
+    position: relative;
+    width: 50px !important;
+    left: 389px;
+    opacity: 0;
+}
+.top li {
+    position: relative;
+}
+
+.label-check-cart:checked + .cart-menu {
+    display: none;
 }
